@@ -25,8 +25,8 @@ def generate_restaurant_name_and_items(cuisine):
   name_chain = LLMChain(llm=llm, prompt=prompt_template_name, output_key ="restaurant" )
 
   prompt_template_items = PromptTemplate(
-  input_variables=["restaurant"], 
-  template="Suggest to me some food menu for the restaurant {restaurant}. Return it as a comma separate list.")
+    input_variables=["restaurant"], 
+    template="Suggest to me some food menu for the restaurant {restaurant}. Return it as a comma separate list.")
 
   food_items_chain = LLMChain(llm=llm, prompt=prompt_template_items, output_key ="menu_items")
 
@@ -38,6 +38,3 @@ def generate_restaurant_name_and_items(cuisine):
 
   response = chain.invoke({"cuisine": "Indian"})
   return response
-
-#if __name__ == __main___:
-#  print (generate_restaurant_name_and_items(Italian))
