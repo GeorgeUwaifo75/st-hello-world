@@ -39,5 +39,5 @@ def generate_restaurant_name_and_items(cuisine):
   response = chain.invoke({"cuisine": "Indian"})
   return response
 
-if __name__ == __main___:
-  print (generate_restaurant_name_and_items(Italian))
+#if __name__ == __main___:
+#  print (generate_restaurant_name_and_items(Italian))
