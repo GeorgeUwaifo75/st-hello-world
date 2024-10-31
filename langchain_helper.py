@@ -36,5 +36,5 @@ def generate_restaurant_name_and_items(cuisine):
     output_variables=["restaurant", "menu_items"]
     )
 
-    response = chain.revoke({"cuisine": cuisinela})
+    response = chain.revoke({"cuisine": cuisine})
     return response
