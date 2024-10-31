@@ -1,9 +1,12 @@
+import langchain
 import langchain_google_genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-import google.generativeai as genai
-from secret_key import GOOGLE_API_KEY
+from langchain.prompts import PromptTemplate
+from langchain.chains import LLMChain
+from langchain.chains import SequentialChain
 
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 
