@@ -1,4 +1,3 @@
-import langchain
 import langchain_google_genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 
