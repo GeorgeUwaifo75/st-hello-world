@@ -1,5 +1,5 @@
 import streamlit as st
-import langchain_helper.py
+import langchain_helper
 st.title("Restaurant Name Generator")
 cuisine = st.sidebar.selectbox("Pick a Cuisine", ("India", "Italian","Nigerian", "Ghanian", "American", "Mexican"))
 
@@ -12,7 +12,7 @@ def generate_restaurant_name_and_items(cuisine):
 """
 
 if cuisine:
-  response = generate_restaurant_name_and_items(cuisine)
+  response = langchain_helper.generate_restaurant_name_and_items(cuisine)
   
   # Define keys explicitly
   restaurant_name_key = 'restaurant_name'
