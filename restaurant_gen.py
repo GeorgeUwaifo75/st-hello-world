@@ -11,7 +11,13 @@ def generate_restaurant_name_and_items(cuisine):
 if cuisine:
   response = generate_restaurant_name_and_items(cuisine)
   st.header(response[restaurant_name])
-  menu_items = response[menu_items].split(",")
+
+  # Define keys explicitly
+  restaurant_name_key = 'restaurant_name'
+  menu_items_key = 'menu_items'
+
+  st.header(response[restaurant_name_key])
+  menu_items = response[menu_items_key].split(",")
   
   st.write("** Menu Items**")
   for item in menu_items:
