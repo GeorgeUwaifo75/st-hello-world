@@ -36,5 +36,5 @@ def generate_restaurant_name_and_items(cuisine):
     output_variables=["restaurant", "menu_items"]
     )
 
-    response = chain.invoke({"cuisine": cuisine})
-    return response
+    #response = chain({"cuisine": cuisine})
+    #return response
