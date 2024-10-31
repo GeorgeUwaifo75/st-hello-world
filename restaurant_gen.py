@@ -11,8 +11,8 @@ if cuisine:
   restaurant_name_key = 'restaurant_name'
   menu_items_key = 'menu_items'
 
-  st.header(response[restaurant_name_key].strip())
-  menu_items = response[menu_items_key].strip().split(",")
+  st.header(response[restaurant_name_key])
+  menu_items = response[menu_items_key].split(",")
   
   st.write("** Menu Items**")
   for item in menu_items:
