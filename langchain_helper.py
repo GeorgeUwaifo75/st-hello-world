@@ -15,7 +15,6 @@ load_dotenv()
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-002",temperature=0.7)
 
 
-
 def generate_restaurant_name_and_items(cuisine):
    
     prompt_template_name = PromptTemplate(
@@ -38,4 +37,4 @@ def generate_restaurant_name_and_items(cuisine):
 
     response = chain({"cuisine": cuisine})
     
-    return response
+return response
