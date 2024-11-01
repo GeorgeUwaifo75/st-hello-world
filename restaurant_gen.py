@@ -11,14 +11,13 @@ if cuisine:
  
   
   # Define keys explicitly
-  #restaurant_name_key = 'restaurant_name'
-  #menu_items_key = 'menu_items'
+  restaurant_name_key = 'restaurant'
+  menu_items_key = 'menu_items'
 
-  #st.header(response[restaurant_name_key])
-  #menu_items = response[menu_items_key].split(",")
+  st.header(response[restaurant_name_key])
+  menu_items = response[menu_items_key].split(",")
 
-  st.header(response[restaurant])
-  menu_items = response[menu_items].split(",")
+  
   
   st.write("** Menu Items**")
   for item in menu_items:
