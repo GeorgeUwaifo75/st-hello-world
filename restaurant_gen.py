@@ -17,7 +17,7 @@ if cuisine:
   #st.header(response[restaurant_name_key])
   #menu_items = response[menu_items_key].split(",")
 
-  st.header(response[restaurant_name])
+  st.header(response[restaurant])
   menu_items = response[menu_items].split(",")
   
   st.write("** Menu Items**")
