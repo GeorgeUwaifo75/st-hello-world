@@ -32,7 +32,7 @@ def generate_restaurant_name_and_items(cuisine):
    chain = SequentialChain(
       chains=[name_chain, food_items_chain],
       input_variables=["cuisine"],
-      output_variables=["restaurant", "menu_items"]
+      output_variables=["restaurant_name", "menu_items"]
    )
 
    response = chain({"cuisine": cuisine})
