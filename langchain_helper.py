@@ -17,11 +17,7 @@ llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-002",temperature=0.7)
 
 
 def generate_restaurant_name_and_items(cuisine):
-    response={
-    "restaurant_name": "Curry Delight",
-    "menu_items": "Samosa, paneer, tikka"
-  }
-    """
+   
     prompt_template_name = PromptTemplate(
         input_variables=["cuisine"], 
         template="I want to open a restaurant for {cuisine} food. Can you suggest one fancy name?")
@@ -41,5 +37,5 @@ def generate_restaurant_name_and_items(cuisine):
         )
 
     response = chain({"cuisine": cuisine})
-    """
+    
     return response
