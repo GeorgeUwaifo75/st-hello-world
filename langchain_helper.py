@@ -24,7 +24,7 @@ def generate_restaurant_name_and_items(cuisine):
    
    prompt_template_name = PromptTemplate(
       input_variables=["cuisine"], 
-      template="I want to open a restaurant for {cuisine} food. Can you suggest one fancy name?")
+      template="I want to open a restaurant for {cuisine} food. Can you suggest just one fancy name?")
 
    name_chain = LLMChain(llm=llm, prompt=prompt_template_name, output_key ="restaurant" )
 
