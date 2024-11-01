@@ -35,7 +35,7 @@ def generate_restaurant_name_and_items(cuisine):
    food_items_chain = LLMChain(llm=llm, prompt=prompt_template_items, output_key ="menu_items")
 
    
-   response = chain({'cuisine': cuisine})
+   #response = chain({'cuisine': cuisine})
 
    chain = SequentialChain(
     chains=[name_chain, food_items_chain],
