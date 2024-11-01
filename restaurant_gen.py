@@ -12,8 +12,8 @@ if cuisine:
  
   
 # Define keys explicitly
-  restaurant_name_key = 'restaurant'
-  menu_items_key = 'menu_items'
+  #restaurant_name_key = 'restaurant'
+  #menu_items_key = 'menu_items'
 
   #st.header(response[restaurant_name_key])
   #menu_items = response[menu_items_key].split(",")
