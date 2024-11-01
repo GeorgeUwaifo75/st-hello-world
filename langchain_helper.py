@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Initialize the Gemini model
-#llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-002",temperature=0.7, google_api_key=GOOGLE_API_KEY)
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-002",temperature=0.7)
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-002",temperature=0.7, google_api_key='AIzaSyBEW2ADL9Z8DSAprqzBwxIz1tDBAqGO17c')
+#llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-002",temperature=0.7)
 
 
 def generate_restaurant_name_and_items(cuisine):
