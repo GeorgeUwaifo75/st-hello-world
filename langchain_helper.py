@@ -35,6 +35,6 @@ def generate_restaurant_name_and_items(cuisine):
       output_variables=["restaurant_name", "menu_items"]
    )
 
-   response = chain({"cuisine": cuisine})
+   response = chain({'cuisine': cuisine})
    
    return response
